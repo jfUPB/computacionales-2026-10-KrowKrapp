@@ -265,3 +265,122 @@ Observaciones:
 
 ## Bitácora de reflexión
 — Pintar en bitmap
+<img width="989" height="437" alt="image" src="https://github.com/user-attachments/assets/edc70180-6996-41b8-aee2-fbba3a060ced" />
+
+- Codigo:
+```
+  @SCREEN
+	D=A
+	@R12
+	AD=D+M
+	M=0
+	D=A 
+	@32
+	AD=D+A
+	M=0
+	D=A 
+	@32
+	AD=D+A
+	@248 
+	D=D+A 
+	A=D-A 
+	M=D-A 
+	D=A 
+	@32
+	AD=D+A
+	@13060 
+	D=D+A 
+	A=D-A 
+	M=D-A 
+	D=A 
+	@32
+	AD=D+A
+	@11278 
+	D=D+A 
+	A=D-A 
+	M=D-A 
+	D=A 
+	@32
+	AD=D+A
+	@8216 
+	D=D+A 
+	A=D-A 
+	M=D-A 
+	D=A 
+	@32
+	AD=D+A
+	@4484 
+	D=D+A 
+	A=D-A 
+	M=D-A 
+	D=A 
+	@32
+	AD=D+A
+	@8770 
+	D=D+A 
+	A=D-A 
+	M=D-A 
+	D=A 
+	@32
+	AD=D+A
+	@13473 
+	D=D+A 
+	A=D-A 
+	M=D-A 
+	D=A 
+	@32
+	AD=D+A
+	@11439 
+	D=D+A 
+	A=D-A 
+	M=D-A 
+	D=A 
+	@32
+	AD=D+A
+	@10408 
+	D=D+A 
+	A=D-A 
+	M=D-A 
+	D=A 
+	@32
+	AD=D+A
+	@4166 
+	D=D+A 
+	A=D-A 
+	M=D-A 
+	D=A 
+	@32
+	AD=D+A
+	@8194 
+	D=D+A 
+	A=D-A 
+	M=D-A 
+	D=A 
+	@32
+	AD=D+A
+	@6154 
+	D=D+A 
+	A=D-A 
+	M=D-A 
+	D=A 
+	@32
+	AD=D+A
+	@2038 
+	D=D+A 
+	A=D-A 
+	M=D-A 
+	D=A 
+	@32
+	AD=D+A
+	@2 
+	D=D+A 
+	A=D-A 
+	M=D-A 
+	@R13
+	A=M
+	D;JMP
+```
+
+
+
+
