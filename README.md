@@ -24,3 +24,5 @@ entrada que hagas el siguiente formato:
 ### título de la entrada
 ```
 
+
+https://juanferfranco.github.io/computacionales-2026-10/
