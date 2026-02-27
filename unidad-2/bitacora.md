@@ -381,6 +381,279 @@ Observaciones:
 	D;JMP
 ```
 
+#### Ya con el dibujar y el borrar adquiridos.
+```
+(WHILE)
+
+    @24576
+    D=M
+    @68         
+    D=D-A
+    @DRAW
+    D;JEQ      
+
+    @24576
+    D=M
+    @69         
+    D=D-A
+    @CLEAR
+    D;JEQ        
+
+    @WHILE
+    0;JMP      
+
+(DRAW)
+
+  @SCREEN
+	D=A
+	@R12
+	AD=D+M
+	M=0
+	D=A 
+	@32
+	AD=D+A
+	M=0
+	D=A 
+	@32
+	AD=D+A
+	@248 
+	D=D+A 
+	A=D-A 
+	M=D-A 
+	D=A 
+	@32
+	AD=D+A
+	@13060 
+	D=D+A 
+	A=D-A 
+	M=D-A 
+	D=A 
+	@32
+	AD=D+A
+	@11278 
+	D=D+A 
+	A=D-A 
+	M=D-A 
+	D=A 
+	@32
+	AD=D+A
+	@8216 
+	D=D+A 
+	A=D-A 
+	M=D-A 
+	D=A 
+	@32
+	AD=D+A
+	@4484 
+	D=D+A 
+	A=D-A 
+	M=D-A 
+	D=A 
+	@32
+	AD=D+A
+	@8770 
+	D=D+A 
+	A=D-A 
+	M=D-A 
+	D=A 
+	@32
+	AD=D+A
+	@13473 
+	D=D+A 
+	A=D-A 
+	M=D-A 
+	D=A 
+	@32
+	AD=D+A
+	@11439 
+	D=D+A 
+	A=D-A 
+	M=D-A 
+	D=A 
+	@32
+	AD=D+A
+	@10408 
+	D=D+A 
+	A=D-A 
+	M=D-A 
+	D=A 
+	@32
+	AD=D+A
+	@4166 
+	D=D+A 
+	A=D-A 
+	M=D-A 
+	D=A 
+	@32
+	AD=D+A
+	@8194 
+	D=D+A 
+	A=D-A 
+	M=D-A 
+	D=A 
+	@32
+	AD=D+A
+	@6154 
+	D=D+A 
+	A=D-A 
+	M=D-A 
+	D=A 
+	@32
+	AD=D+A
+	@2038 
+	D=D+A 
+	A=D-A 
+	M=D-A 
+	D=A 
+	@32
+	AD=D+A
+	@2 
+	D=D+A 
+	A=D-A 
+	M=D-A 
+	@R13
+	A=M
+	D;JMP
+
+    (CLEAR)
+    @SCREEN
+    D=A
+    @R12
+    AD=D+M
+    M=0
+
+    D=A 
+    @32
+    AD=D+A
+    M=0
+
+    D=A 
+    @32
+    AD=D+A
+    @248 
+    D=D+A 
+    A=D-A 
+    M=0
+
+    D=A 
+    @32
+    AD=D+A
+    @13060 
+    D=D+A 
+    A=D-A 
+    M=0
+
+    D=A 
+    @32
+    AD=D+A
+    @11278 
+    D=D+A 
+    A=D-A 
+    M=0
+
+    D=A 
+    @32
+    AD=D+A
+    @8216 
+    D=D+A 
+    A=D-A 
+    M=0
+
+    D=A 
+    @32
+    AD=D+A
+    @4484 
+    D=D+A 
+    A=D-A 
+    M=0
+
+    D=A 
+    @32
+    AD=D+A
+    @8770 
+    D=D+A 
+    A=D-A 
+    M=0
+
+    D=A 
+    @32
+    AD=D+A
+    @13473 
+    D=D+A 
+    A=D-A 
+    M=0
+
+    D=A 
+    @32
+    AD=D+A
+    @11439 
+    D=D+A 
+    A=D-A 
+    M=0
+
+    D=A 
+    @32
+    AD=D+A
+    @10408 
+    D=D+A 
+    A=D-A 
+    M=0
+
+    D=A 
+    @32
+    AD=D+A
+    @4166 
+    D=D+A 
+    A=D-A 
+    M=0
+
+    D=A 
+    @32
+    AD=D+A
+    @8194 
+    D=D+A 
+    A=D-A 
+    M=0
+
+    D=A 
+    @32
+    AD=D+A
+    @6154 
+    D=D+A 
+    A=D-A 
+    M=0
+
+    D=A 
+    @32
+    AD=D+A
+    @2038 
+    D=D+A 
+    A=D-A 
+    M=0
+
+    D=A 
+    @32
+    AD=D+A
+    @2 
+    D=D+A 
+    A=D-A 
+    M=0
+
+    @WHILE
+    0;JMP
+```
+
+#### Resultados del dibujo:
+- Dibujando:
+<img width="987" height="569" alt="image" src="https://github.com/user-attachments/assets/48cb0067-a1af-4a1d-aa06-b49483da4213" />
+
+- Borrando:
+<img width="999" height="588" alt="image" src="https://github.com/user-attachments/assets/2e24c93a-8ebc-4582-b8c7-b7acd71431b3" />
+
+
+
+
+
 
 
 
